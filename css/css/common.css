@@ -1,0 +1,23 @@
+*{
+    box-sizing: border-box;
+    padding: auto;
+}
+footer{
+    background-color: blue;
+   
+}
+
+div {
+    --primary-text-color:red;
+}
+a{
+    --primary-bg-color: #fff;
+}
+
+.footer_list{
+    --fuuter-bg-color: #000;
+}
+.footer_about{
+    text-align:center;
+    
+}

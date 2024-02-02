@@ -1,0 +1,27 @@
+*{
+    box-sizing: border-box;
+    padding: auto;
+}
+
+body{
+
+    --primary-text-color: #000;
+    --primary-bg-color: #fff;
+}
+
+footer {
+  width:100%;
+  background:rgb(0, 238, 255);
+  text-align:absolutely;
+  font-size:8px;
+  height:10px;
+   
+}
+
+.footer,div {
+    --primary-text-color:red;
+}
+.footer,a{
+    --primary-bg-color: #fff;
+}
+
