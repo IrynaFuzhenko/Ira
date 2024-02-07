@@ -1,0 +1,51 @@
+h1, h2, h3 {
+    color: rgb(120,120,120);
+}
+#main{
+    color: #e60202;
+}
+.h2{
+    color: red;
+}
+.heading {
+    color: green;
+}
+ul > li {
+    font-weight: bold;
+}
+section > p {
+    color: red;
+   }
+section p {
+    font-size: 40px;
+}
+.second {
+    color: indigo;
+    }
+p.first {
+    color: green;
+}
+p.first:visited {
+    background-color: rgb(255, 0, 0);
+
+}
+p.first:hover{
+    color: blue;
+}
+div ~ p {
+    color: salmon;
+}
+.translucent-box {
+    background: hsla(0, 100%, 50% , 0.5);
+    }
+:root {
+    font-size: 100%;
+}
+
+body {
+        font-size: 140%;/* font-size: 22.4px;*/
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+.h1 {
+        font-size: 240%;/* font-size: 2em;*/
+    }
