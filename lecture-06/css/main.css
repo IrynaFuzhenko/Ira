@@ -1,0 +1,70 @@
+/* *{
+    padding: 0;
+    margin: 0; */
+
+.menu-list {
+    color: indigo;
+}
+.Portfolio :visited {
+    color: gold;
+}
+.Pricing :hover{
+    color:salmon;
+}
+.Customers :active{
+    color: red;
+}
+.Careers :focus{
+    color: orange;
+}
+input:in-range {
+    background-color: rgb(0 255 0 / 25%);
+  }
+  
+  input:out-of-range {
+    background-color: rgb(255 0 0 / 25%);
+    border: 2px solid red;
+  }
+  
+  input:in-range + label::after {
+    content: "okay.";
+    
+  }
+  
+  input:out-of-range + label::after {
+    content: "out of range!";
+  }
+
+.paragraph :first-child {
+    color: orange;
+}
+.type-text :first-child{
+        color: orange;
+}  
+.text2 :last-of-type{
+    color: orange;
+}
+.item li:not(.first-item) { color: orange; }
+
+.item li:not(.first-item):not(:last-of-type) {
+    background: yellow;
+    color: black;
+}  
+ol :nth-child(2) {color: orange; } 
+ol :nth-child(2n) {color: orange;} 
+ol :nth-child(2n+6) {color: orange;}   
+
+h1.ua::before {
+    content: "Слава ";
+}
+h1.hero::after {
+    content: " Слава!";
+}
+p::before {
+    content: "\00A7";
+   
+ }
+nav{
+    padding: 2 2 2;
+}
+

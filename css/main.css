@@ -33,8 +33,21 @@ h1,h2,h3 {
     margin: 2px;
     margin-bottom: 10px;
     position:relative;
-    
-   
-   
+}
+h2 {
+    text-transform: uppercase;
+}
+.bg-dark{
+    background-color: black;
+    color: white;
+}
+ul.categories li {
+    color: indigo;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+ul.categories li:hover{
+    background-color: lightgray;
+
 }
 
