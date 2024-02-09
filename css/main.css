@@ -1,0 +1,40 @@
+@import url("common.css");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* * {
+    margin: 0;
+    padding: 0;
+   } */
+body{
+    color: var(--text-color);
+    background-color: var(--primary-bg-color);
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+}
+h1,h2,h3 {
+    font-weight: 700;
+}
+.h1 {
+    font-size: 1.45rem;
+}
+.h2 {
+    font-size: 1.3rem; 
+}
+.list-unstyled {
+    list-style: none;
+}
+.footer-social {
+    padding: 0;
+    background-color: #45a1ff; 
+}
+.icon-contacts{
+    display:inline;
+    font-size: 37px;
+    margin: 2px;
+    margin-bottom: 10px;
+    position:relative;
+    
+   
+   
+}
+
