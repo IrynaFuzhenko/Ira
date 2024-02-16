@@ -19,11 +19,14 @@ section > p {
 section p {
     font-size: 40px;
 }
-.second {
+body > h2:first-of-type {
     color: indigo;
-    }
-p.first {
+}
+p.first a {
     color: green;
+}
+p .first a {
+    color: green; 
 }
 p.first:visited {
     background-color: rgb(255, 0, 0);
