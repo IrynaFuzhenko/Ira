@@ -3,13 +3,13 @@ body{
     font-size: 16px;
 }
 div{
-    font-size: 1.6em;
+    font-size: 1em;
 }
 span{ 
     font-size: 1.6em;
 }
 strong{
-    font-size: 1em;
+    font-size: 1.6rem;
 }
 ul {
     list-style-type: square;

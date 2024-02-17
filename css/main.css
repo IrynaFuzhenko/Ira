@@ -6,10 +6,10 @@
     padding: 0;
    } */
 body{
-    color: var(--text-color);
+    color: var(--primary-text-color);
     background-color: var(--primary-bg-color);
-    font-family: var(--font-family);
-    font-size: var(--font-size);
+    font-family: var(--primary-font-family);
+    font-size: var(--primary-font-size);
 }
 h1,h2,h3 {
     font-weight: 700;
@@ -29,7 +29,7 @@ h1,h2,h3 {
 }
 .icon-contacts{
     display:inline;
-    font-size: 37px;
+    font-size: 16px;
     margin: 2px;
     margin-bottom: 10px;
     position:relative;
