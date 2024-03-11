@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+	
+</head>
+<body>
+
+  - функція checkAge повертає true, якщо параметр age перевищує 18.
+  - в іншому випадку запитує підтвердження та повертає результат:
+    
+    <!-- <script>
+    function checkAge(age) {
+      if (age > 18) {
+        return true;
+      } else {
+        // ...
+        return confirm('Did parents allow you?');
+      }
+    }
+    </script> -->
+
+    <script>
+    function checkAge(age) {
+      if (age > 18) {
+        return true;
+      
+        return confirm('Did parents allow you?');
+      }
+    } 
+    // -Чи буде функція працювати інакше, якщо видалити else?
+    // -Так
+    // -Чи є різниця в поведінці цих двох варіантів і чому?
+    // -Різниці немає. Працюють однаково.
+    </script>
+    <script>
+    function checkAge(age) {
+       if (age > 18) {
+       return true;
+       } else {
+       return confirm('Did parents allow you?');
+       }
+    }
+    </script>
+    <script>
+        function checkAge(age) {
+        return (age > 18) ? true : confirm('Did parents allow you?');
+    }
+    </script>
+    <script>
+        function checkAge(age) {
+        return (age > 18) || confirm('Did parents allow you?');
+    }
+    </script>
+    <!-- -Чи потрібні дужки навколо age > 18?
+    -Вони не обовьязкові,але для кращої читабельності коду потрібні. -->
+    <script>
+        min(2, 5) == 2
+        min(3, -1) == -1
+        min(1, 1) == 1
+
+        function min(a, b) {
+        if (a < b) {
+        return a;
+        } else {
+        return b;
+        }
+    }
+        function min(a, b) {
+        return a < b ? a : b;
+    }
+    </script>
+    <script>
+    //   pow(3, 2) = 3 * 3 = 9
+    //   pow(3, 3) = 3 * 3 * 3 = 27
+    //   pow(1, 100) = 1 * 1 * ...* 1 = 1 
+
+    //   function pow(x, n) {
+    //   let result = x;
+    //   for (let i = 1; i < n; i++) {
+    //    result *= x;
+    //  }
+    //   return result;
+    //  }
+
+    // let x = prompt("x?");
+    // let n = prompt("n?");
+
+    // if (n >= 1 && n % 1 == 0) {
+    // alert( pow(x, n) );
+    // } else {
+    // alert('Не вірно.Значення n: цілі числа від 1');
+    // }
+    // </script>
+    <script>
+    //     function ask(question, yes, no) {
+    //     if (confirm(question)) yes();
+    //    else no();
+    // }
+    //    ask(
+    //    question,
+    //   () => alert("yes"),
+    //   () => alert("no")
+    // )
+    //    (function ask(question, yes, no) {
+    //     if (confirm(question)) yes();
+    //    else no();
+    //   }());
+    </script>
+    <script>
+    //   function A() { console.log('A was called'); return undefined;}
+    //   function B() { console.log('B was called'); return false;}
+    //   function C() { console.log('C was called'); return "foo";}  
+      
+
+  function A() {
+  console.log('A was called');
+  return undefined;
+}
+
+  function B() {
+  console.log('B was called');
+  return false;
+}
+
+  function C() {
+  console.log('C was called');
+  return "foo";
+}
+
+console.log( A() ? '' : C() );
+console.log( B() ? '' :  C() );
+    </script>
+</body>
+</html>
