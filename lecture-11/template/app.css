@@ -11,5 +11,5 @@
     --max-width: 180ch;
   }
   .card {
-    grid-template-rows: minmax(100vh, auto) minmax(1fr, auto);
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, var(--min)), 1fr));
   }
