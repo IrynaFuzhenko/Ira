@@ -40,11 +40,26 @@ function getFullName (firstName, lastName) {
     return firstName + " " + lastName;
     } 
 //9
-greeting = "Hello, " + getFullName(firstName, lastName) + "!"; 
-//10
-function mygreeting(firstName, lastName) {
-    return `<div><h1>Hello, ${firstName} ${lastName}!</h1></div>`;
+function getFullName(firstName, lastName) {
+    return `${firstName} ${lastName}`;
   }
+  function greeting() {
+   const fullName = getFullName('Tom', 'Cat');
+   return `Hello, ${fullName}!`;
+  }
+  console.log(greeting()); 
+//10
+function greeting() {
+    const fullName = getFullName('Tom', 'Cat');
+    return `Hello, ${fullName}!`;
+  }
+  
+  function createGreetingTemplate() {
+    const greetingMessage = greeting();
+    const template = `<div><h1>${greetingMessage}</h1></div>`;
+    return template;
+  }
+  console.log(createGreetingTemplate());
 //11
 let string1 = "  The name of our game  ";
 
@@ -67,9 +82,8 @@ console.log(string1.trimEnd());// "  The name of our game"
 
 let trimPhoneNumber = phoneNumber.trim();
 
-console.log(trimPhoneNumber);       // '555-123'
-console.log(phoneNumber.trimStart());// '\t  555-123\n '
-console.log(phoneNumber.trim());    // '\t  555-123\n'
+console.log(trimPhoneNumber);       
+console.log(phoneNumber.trimStart());
 
 //12
 // let sentence = 'Always look on the bright side of life';
@@ -102,21 +116,25 @@ console.log(phoneNumber.trim());    // '\t  555-123\n'
 
 //15
 
+let username = "user_142";
 
+let regex1 = /^[a-z,0-9_-]{8,16}$/i;
+let isValid = regex1.test(username);
+console.log((isValid)); 
 
 
 //16
-const passcode = 'bacon';
-const findme = `8sowl0xebaconxjwo98w`;
-const found = findme.includes(passcode);
-console.log(found); // true
+let email = "example123@example.com";
+
+let regex2 = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+let isValidEmail = regex2.test(email);
+console.log(isValidEmail);
 
 //17
 let sentence = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in sapien eu velit eleifend ullamcorper eget vitae nulla. Aenean euismod purus sed neque dictum, nec lobortis ante faucibus.';
-let truncateText1 = sentence.substring(sentence, 50);
 
+let truncateText1 = sentence.substring(sentence, 50);
 console.log(truncateText1);
 
 let truncateText2 = sentence.substr(sentence, 50);
-
 console.log(truncateText2);
