@@ -20,9 +20,18 @@ console.log(str3[6]);
 console.log(str3[str3.length -1]);
 console.log(str3.charAt(str3.length -1));
 //5
-console.log(str3.slice(-1));
-console.log(str3.substring (str3.length -1));
-console.log(Array.from(str3).pop(-1));
+function lastChar(str) {
+  return str[str.length - 1];
+}
+
+function lastChar(str) {
+  return str.charAt(str.length - 1);
+}
+
+function lastChar(str) {
+  return str.substring(str.length - 1);
+}
+console.log(lastChar(str3));
 //6
 // let a = 'When candles are out,';
 // let b = 'all cats are grey.';
@@ -49,6 +58,9 @@ function getFullName(firstName, lastName) {
   }
   console.log(greeting()); 
 //10
+function getFullName(firstName, lastName) {
+    return `${firstName} ${lastName}`;
+  }
 function greeting() {
     const fullName = getFullName('Tom', 'Cat');
     return `Hello, ${fullName}!`;
@@ -133,8 +145,12 @@ console.log(isValidEmail);
 //17
 let sentence = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in sapien eu velit eleifend ullamcorper eget vitae nulla. Aenean euismod purus sed neque dictum, nec lobortis ante faucibus.';
 
-let truncateText1 = sentence.substring(sentence, 50);
-console.log(truncateText1);
-
-let truncateText2 = sentence.substr(sentence, 50);
-console.log(truncateText2);
+function truncateText(text, maxLength) {
+  if (text.length <= maxLength) {
+  return text;
+  } else {
+  return text.substring(0, maxLength) + '...';
+  }
+  }
+  let truncatedSentence = truncateText(sentence, 50);
+  console.log(truncatedSentence);

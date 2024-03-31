@@ -1,26 +1,32 @@
 //1
 const person = {
     name:'John',
-    age:'30',
+    age: 30,
 };
 console.log(person);
-console.log(Object.prototype);
-
 //2
- person.name = {
-    firstName: 'Ivan',
-    lastName: 'Duglas'
+const person2 = {
+  name: {
+  firstName: 'Ivan',
+  lastName: 'Duglas'
+  },
+  age: 30
   };
-console.log('First Name:', person.name.firstName);
-console.log('Last Name:', person.name.lastName);
-console.log('Age:', person.age);
-
+console.log('First Name:', person2.name.firstName);
+console.log('Last Name:', person2.name.lastName);
+console.log('Age:', person2.age);
 //3
-person.bio = function() {
+const person3 = {
+  name: {
+  firstName: 'Ilona',
+  lastName: 'Duglas'
+  },
+  age: 35
+  };
+person3.bio = function() {
 console.log(`${this.name.firstName} ${this.name.lastName} is ${this.age} years old.`);
   }
-person.bio();
-
+person3.bio();
 //4
 person.introduceSelf = function () {
     console.log(`Hi! I'm ${this.name.firstName}.`);
@@ -57,6 +63,9 @@ function Person(name) {
   mary.introduceSelf();
   tom.introduceSelf();
 
+ mary.hasOwnProperty("prop");
+  console.log(`Does mary have the property 'prop'? ${mary.hasOwnProperty("prop")}`);
+ mary.prop = 'value';
  mary.hasOwnProperty("prop");
   console.log(`Does mary have the property 'prop'? ${mary.hasOwnProperty("prop")}`);
 
