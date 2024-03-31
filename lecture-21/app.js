@@ -6,12 +6,12 @@ console.log(fruits.split(' '));
 
 //2
 const fruits2 = ['apple', 'banana', 'cantaloupe', 'blueberries', 'grapefruit'];
-for (let i = 1; i < fruits2.length; i++) {
+for (let i = 0; i < fruits2.length; i++) {
   console.log(fruits2[i]);
 }
 //3
 const fruits3 = ['apple', 'banana', 'cantaloupe', 'blueberries', 'grapefruit'];
-let index = 2;
+let index = 0;
 
 while (index < fruits3.length) {
   console.log(fruits3[index]);
@@ -66,10 +66,8 @@ console.log(names4);
 const names5 = ['Batman', 'Catwoman', 'Joker', 'Bane'];
 const fromIndex = 1;
 const removeCount = 2;
-const newNames = [
-...names5.slice(0,fromIndex), 'Alfred',
-...names5.slice(fromIndex + removeCount)];
-console.log(newNames);
+names5.splice(fromIndex, removeCount, 'Alfred');
+console.log(names5);
 //14
 const names6 = ['Batman', 'Catwoman', 'Joker', 'Bane'];
 if (!names6.includes('Alfred')){
