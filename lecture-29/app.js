@@ -2,7 +2,7 @@
 class AuthException extends Error {
     constructor(code, message) {
       super(code + ': ' + (message || ''));
-      this.message;
+      this.message = code + ': ' + (message || '');
     }
     
     toString() {
