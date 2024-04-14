@@ -40,21 +40,30 @@
     
     x && (y = z);//5 
     
-    x ??= y; //3
+    x ??= y; //4
     
-    x ?? (y = z);//3 
+    x ?? (y = z);//5 
    
     
    </script> -->
    <!-- <script>
-     let x = 3
-     console.log("Congratulations, You did it"); 
-     if(x>10){
-      console.log( "The number is too long");
-     }else if(x<3){
-      console.log( "The number is short");
-     }
-   </script> -->
+    let guess = prompt("Guess the number:");
+    if (guess !== null) {
+        if (!isNaN(parseInt(guess))) {
+            if (parseInt(guess) === 3) {
+                console.log("Congratulations, You did it!");
+            } else if (parseInt(guess) > 3) {
+                console.log("The number is too long");
+            } else {
+                console.log("The number is short");
+            }
+        } else {
+            console.log("Invalid input. Please enter a number.");
+        }
+    } else {
+        console.log("Cancelled. No input provided.");
+    }
+</script> -->
    <!-- <script>
     const message = getDayMessage("Friday");
     console.log(message);
